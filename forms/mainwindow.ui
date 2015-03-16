@@ -1,0 +1,1152 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Qtaxi - version 0.01</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="leftMargin" >
+     <number>9</number>
+    </property>
+    <property name="topMargin" >
+     <number>9</number>
+    </property>
+    <property name="rightMargin" >
+     <number>9</number>
+    </property>
+    <property name="bottomMargin" >
+     <number>9</number>
+    </property>
+    <property name="horizontalSpacing" >
+     <number>6</number>
+    </property>
+    <property name="verticalSpacing" >
+     <number>6</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="QTabWidget" name="tabWidget" >
+      <property name="currentIndex" >
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="acceptedtab" >
+       <attribute name="title" >
+        <string>Accepted</string>
+       </attribute>
+       <attribute name="icon" >
+        <iconset resource="../icons/resources.qrc" >:/32/new.png</iconset>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="leftMargin" >
+         <number>9</number>
+        </property>
+        <property name="topMargin" >
+         <number>9</number>
+        </property>
+        <property name="rightMargin" >
+         <number>9</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>9</number>
+        </property>
+        <property name="horizontalSpacing" >
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>0</number>
+          </property>
+          <property name="topMargin" >
+           <number>0</number>
+          </property>
+          <property name="rightMargin" >
+           <number>0</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2" >
+              <property name="text" >
+               <string>Find:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="accepedfindlineEdit" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="acceptedfindtoolButton" >
+              <property name="text" >
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="acceptedtableView" >
+            <property name="selectionMode" >
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior" >
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" >
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addacceptedpushButton" >
+              <property name="text" >
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="deferredtab" >
+       <attribute name="title" >
+        <string>Deferred</string>
+       </attribute>
+       <attribute name="icon" >
+        <iconset resource="../icons/resources.qrc" >:/32/history.png</iconset>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="leftMargin" >
+         <number>9</number>
+        </property>
+        <property name="topMargin" >
+         <number>9</number>
+        </property>
+        <property name="rightMargin" >
+         <number>9</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>9</number>
+        </property>
+        <property name="horizontalSpacing" >
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>0</number>
+          </property>
+          <property name="topMargin" >
+           <number>0</number>
+          </property>
+          <property name="rightMargin" >
+           <number>0</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3" >
+              <property name="text" >
+               <string>Find:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="deferredfindlineEdit" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="deferredfindtoolButton" >
+              <property name="text" >
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="deferredtableView" >
+            <property name="selectionMode" >
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior" >
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" >
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="adddeferredpushButton" >
+              <property name="text" >
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="closedtab" >
+       <attribute name="title" >
+        <string>Closed</string>
+       </attribute>
+       <attribute name="icon" >
+        <iconset resource="../icons/resources.qrc" >:/32/apply.png</iconset>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="leftMargin" >
+         <number>9</number>
+        </property>
+        <property name="topMargin" >
+         <number>9</number>
+        </property>
+        <property name="rightMargin" >
+         <number>9</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>9</number>
+        </property>
+        <property name="horizontalSpacing" >
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>0</number>
+          </property>
+          <property name="topMargin" >
+           <number>0</number>
+          </property>
+          <property name="rightMargin" >
+           <number>0</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4" >
+              <property name="text" >
+               <string>Find:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="closedfindlineEdit" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="closedfindtoolButton" >
+              <property name="text" >
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="closedtableView" >
+            <property name="selectionMode" >
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior" >
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" >
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="printclosedpushButton" >
+              <property name="text" >
+               <string>Print</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="driversonlinetab" >
+       <attribute name="title" >
+        <string>Drivers on line</string>
+       </attribute>
+       <attribute name="icon" >
+        <iconset resource="../icons/resources.qrc" >:/32/driversonline.png</iconset>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="leftMargin" >
+         <number>9</number>
+        </property>
+        <property name="topMargin" >
+         <number>9</number>
+        </property>
+        <property name="rightMargin" >
+         <number>9</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>9</number>
+        </property>
+        <property name="horizontalSpacing" >
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>0</number>
+          </property>
+          <property name="topMargin" >
+           <number>0</number>
+          </property>
+          <property name="rightMargin" >
+           <number>0</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label" >
+              <property name="text" >
+               <string>Find:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="driversfindlineEdit" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="driversfindtoolButton" >
+              <property name="text" >
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QListView" name="driverslistView" >
+              <property name="maximumSize" >
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" >
+              <property name="spacing" >
+               <number>6</number>
+              </property>
+              <property name="leftMargin" >
+               <number>0</number>
+              </property>
+              <property name="topMargin" >
+               <number>0</number>
+              </property>
+              <property name="rightMargin" >
+               <number>0</number>
+              </property>
+              <property name="bottomMargin" >
+               <number>0</number>
+              </property>
+              <item>
+               <spacer>
+                <property name="orientation" >
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" >
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QToolButton" name="todoltoolButton" >
+                <property name="text" >
+                 <string/>
+                </property>
+                <property name="icon" >
+                 <iconset resource="../icons/resources.qrc" >:/16/rigth16.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="fromdoltoolButton" >
+                <property name="text" >
+                 <string/>
+                </property>
+                <property name="icon" >
+                 <iconset resource="../icons/resources.qrc" >:/16/left16.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer>
+                <property name="orientation" >
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" >
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableView" name="driverstableView" >
+              <property name="selectionMode" >
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="selectionBehavior" >
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeView" name="parkingtreeView" >
+              <property name="maximumSize" >
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="blacktab" >
+       <attribute name="title" >
+        <string>Blacklist</string>
+       </attribute>
+       <attribute name="icon" >
+        <iconset resource="../icons/resources.qrc" >:/32/file_del.png</iconset>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="leftMargin" >
+         <number>9</number>
+        </property>
+        <property name="topMargin" >
+         <number>9</number>
+        </property>
+        <property name="rightMargin" >
+         <number>9</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>9</number>
+        </property>
+        <property name="horizontalSpacing" >
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <layout class="QVBoxLayout" >
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <property name="leftMargin" >
+           <number>0</number>
+          </property>
+          <property name="topMargin" >
+           <number>0</number>
+          </property>
+          <property name="rightMargin" >
+           <number>0</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5" >
+              <property name="text" >
+               <string>Find:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="blackfindlineEdit" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="blackfindtoolButton" >
+              <property name="text" >
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="blacktableView" >
+            <property name="selectionMode" >
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior" >
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <property name="leftMargin" >
+             <number>0</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>0</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>0</number>
+            </property>
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" >
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="printblackpushButton" >
+              <property name="text" >
+               <string>Print</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>838</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSetup" >
+    <property name="title" >
+     <string>&amp;Setup</string>
+    </property>
+    <addaction name="actionConnection" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout_Qtaxi" />
+    <addaction name="actionContext_help" />
+   </widget>
+   <widget class="QMenu" name="menuOrders" >
+    <property name="title" >
+     <string>&amp;Orders</string>
+    </property>
+    <addaction name="actionAccepted" />
+    <addaction name="actionDeferred" />
+    <addaction name="actionClosed" />
+    <addaction name="actionDriversonline" />
+    <addaction name="actionBlack" />
+   </widget>
+   <widget class="QMenu" name="menuReferenses" >
+    <property name="title" >
+     <string>&amp;References</string>
+    </property>
+    <addaction name="actionDrivers" />
+    <addaction name="actionOperators" />
+    <addaction name="actionCities" />
+    <addaction name="actionStreets" />
+    <addaction name="actionCars" />
+    <addaction name="separator" />
+    <addaction name="actionCarting" />
+    <addaction name="actionCost" />
+    <addaction name="separator" />
+    <addaction name="actionParking" />
+    <addaction name="actionClients" />
+   </widget>
+   <widget class="QMenu" name="menuReports" >
+    <property name="title" >
+     <string>R&amp;eports</string>
+    </property>
+    <addaction name="actionBest_operator" />
+    <addaction name="actionBest_driver" />
+    <addaction name="actionProfit_margin" />
+    <addaction name="actionClients_list" />
+   </widget>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionQuit" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuReferenses" />
+   <addaction name="menuOrders" />
+   <addaction name="menuReports" />
+   <addaction name="menuSetup" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator" />
+   <addaction name="actionDrivers" />
+   <addaction name="actionOperators" />
+   <addaction name="separator" />
+   <addaction name="actionAccepted" />
+   <addaction name="actionDeferred" />
+   <addaction name="actionClosed" />
+   <addaction name="actionDriversonline" />
+   <addaction name="actionBlack" />
+   <addaction name="separator" />
+   <addaction name="actionContext_help" />
+  </widget>
+  <action name="actionQuit" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/undo.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Quit</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionDrivers" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/delivery.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Drivers</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionOperators" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/user.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Operators</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionCities" >
+   <property name="text" >
+    <string>Cities</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionStreets" >
+   <property name="text" >
+    <string>Streets</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionConnection" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/web_connect.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Connection</string>
+   </property>
+  </action>
+  <action name="actionCars" >
+   <property name="text" >
+    <string>Cars</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionCost" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/money.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Cost</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionCarting" >
+   <property name="text" >
+    <string>Carting</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionAccepted" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/new.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Accepted</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="actionDeferred" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/history.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Deferred</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionClosed" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/apply.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Closed</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionBlack" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/file_del.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Black</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="actionDriversonline" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/driversonline.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Drivers on line</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qtaxi" >
+   <property name="text" >
+    <string>About Qtaxi</string>
+   </property>
+  </action>
+  <action name="actionContext_help" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/help.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Context help</string>
+   </property>
+   <property name="shortcut" >
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionParking" >
+   <property name="text" >
+    <string>Parking</string>
+   </property>
+  </action>
+  <action name="actionBest_operator" >
+   <property name="text" >
+    <string>Best operator</string>
+   </property>
+  </action>
+  <action name="actionBest_driver" >
+   <property name="text" >
+    <string>Best driver</string>
+   </property>
+  </action>
+  <action name="actionProfit_margin" >
+   <property name="text" >
+    <string>Profit margin</string>
+   </property>
+  </action>
+  <action name="actionClients" >
+   <property name="icon" >
+    <iconset resource="../icons/resources.qrc" >:/32/clients.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Clients</string>
+   </property>
+  </action>
+  <action name="actionClients_list" >
+   <property name="text" >
+    <string>Clients list</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../icons/resources.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>422</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>acceptedfindtoolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>accepedfindlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>813</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>115</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deferredfindtoolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>deferredfindlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>110</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>110</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closedfindtoolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>closedfindlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>110</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>110</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>driversfindtoolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>driversfindlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>813</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>788</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>blackfindtoolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>blackfindlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>110</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>110</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

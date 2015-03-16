@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<title>Справка Qtaxi</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="wrapper">
+      <div id="body">
+          <div id="left">
+              <ul id="nav">
+                  
+        <li><a href="index.htm">&raquo; &nbsp; &nbsp; О программе</a></li>
+        
+        <li><a href="install.htm">&raquo; &nbsp; &nbsp; Установка</a></li>
+                  
+        <li><a href="installdb.htm">&raquo; &nbsp; &nbsp; Установка сервера</a></li>
+                  
+        <li><a href="createdb.htm">&raquo; &nbsp; &nbsp; Создание базы </a></li>
+                  
+        <li><a href="firstrun.htm">&raquo; &nbsp; &nbsp; Первый запуск</a></li>
+                  
+        <li><a href="working.htm">&raquo; &nbsp; &nbsp; Работа с программой</a></li>  
+
+       	<li><a href="screenshots.htm">&raquo; &nbsp; &nbsp; Скриншоты</a></li>   
+
+	<li><a href="download.htm">&raquo; &nbsp; &nbsp; Скачать</a></li>   
+				   
+        <li><a href="support.htm">&raquo; &nbsp; &nbsp; Поддержка</a></li> 
+  			    
+        <li><a href="vip.htm">&raquo; &nbsp; &nbsp; Платная поддержка</a></li>   
+              </ul>
+              <div id="latest">
+                  <h2><img src="images/title_latest_events.gif" width="165" height="24" alt="Новости" /></h2>
+                  
+        <div class="events"> 
+              <h3>09/12/2007</h3>
+                      
+          <p>Программа Qtaxi выложена в открытый доступ.</p>
+                  
+                     
+          <div class="events">
+                      </div>
+          <!-- end .i -->
+          <p class="readmore"><a href="news.htm">...Подробнее</a></p>
+            
+          <!-- end latest -->
+        </div>
+      </div>
+    </div>
+    <!-- end left -->
+          
+    <div id="content"> 
+      <div class="inner">
+	  
+                  <h2>Установка сервера  <strong>PostgreSQL</strong></h2>
+                  <p> Мы покажем процесс установки сервера баз данных в сети предприятия для запуска Qtaxi. Демонстрация выполнена на платформе Windows, т.к. для неё требуется скачать бинарный дистрибутив с сайта <a href="http://www.postgresql.org" name="PostgreSQL">PostgreSQL</a> версии 8.1 или выше. В дистрибутивах Linux данный пакет, как правило, входит в установочный образ и вам нужно воспользоваться пакетным менеджером, для его установки. Если этот сервер не входит в поставку вашего дистрибутива, вы можете скачать там же, как исходные коды так и бинарный пакет. В данном руководстве освещены все шаги, от запуска до восстановления базы (раздел "Создание базы"), которое придётся также выполнить в случае установки сервера на платформе Linux. Если у Вас  что-то не получилось, попробуйте пройти весь процесс заново, возможно вы где то ошиблись, или обратитесь за помощью к системному администратору или авторам программы.</p>
+                  <p> 1. Запускаем файл "postgresql-8.1.msi". Выбираем язык установки и нажимаем кнопку "Start".</p>
+			<img src="images/db1.JPG" alt="Запуск инсталлятора" width="505" height="386" />
+                  <p> 2. В окне выбора компонентов, не забудьте выбрать установку "pgAdmin III" - графической утилиты администрирования.</p>
+			<img src="images/db2.JPG"  alt="Выбор компонентов"  width="506" height="385" />
+		  <p> 3. Выбираем способ запуска сервера - по умолчанию он стартует как сервис, вводим пароль пользователя от имени которого будет запущен сервис или оставляем это поле пустым.</p></p>
+			<img src="images/db3.JPG" alt="Настройка запуска" width="505" height="385" />
+		  <p>Программа установки автоматически сгенерирут его.</p>
+			<img src="images/db4.JPG" alt="генерация пароля" width="506" height="383" />
+		  <p>4. В следующем шаге, необходимо настроить параметры сервера, такие как "Локализация" - указываете вашу страну, "Кодировка" - указываете <strong>"UTF-8"</strong>, чтобы не было проблем с кодировками, пароль суперюзера - какой хотите, только <strong>запомните его</strong>, т.к. это администратор сервера баз данных и к пользователю от имени которого стартует сервер не имеет никакого отношения. Если вы потеряете пароль, тогда не сможете управлять сервером.</p>
+			<img src="images/db5.JPG" alt="Параметры сервера" width="506" height="384" />
+		 <p>Если после нажатия кнопки далее вы увидите нижеследующее собщение, проверьте запущен ли сервис "Secondary logon", в остнастке "Службы" панели управления.</p>
+			<img src="images/db6.JPG" alt="Ошибка запуска" width="550" height="118" />
+		 <p> PostgreSQL установлен и готов к работе. </p>
+  
+              </div><!-- end .inner -->
+              &nbsp;
+          </div><!-- end content -->
+    <div class="clear"></div>
+          <div id="footer">
+              Powered by <a href="http://kdewebdev.org">Quanta plus</a>
+          </div><!-- end footer -->
+      </div><!-- end body -->
+  </div>
+</body>
+</html>

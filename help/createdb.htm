@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<title>Справка Qtaxi</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="wrapper">
+      <div id="body">
+          <div id="left">
+              <ul id="nav">
+                  
+        <li><a href="index.htm">&raquo; &nbsp; &nbsp; О программе</a></li>
+        
+        <li><a href="install.htm">&raquo; &nbsp; &nbsp; Установка</a></li>
+                  
+        <li><a href="installdb.htm">&raquo; &nbsp; &nbsp; Установка сервера</a></li>
+                  
+        <li><a href="createdb.htm">&raquo; &nbsp; &nbsp; Создание базы </a></li>
+                  
+        <li><a href="firstrun.htm">&raquo; &nbsp; &nbsp; Первый запуск</a></li>
+                  
+        <li><a href="working.htm">&raquo; &nbsp; &nbsp; Работа с программой</a></li>  
+
+       	<li><a href="screenshots.htm">&raquo; &nbsp; &nbsp; Скриншоты</a></li>   
+
+	<li><a href="download.htm">&raquo; &nbsp; &nbsp; Скачать</a></li>   
+				   
+        <li><a href="support.htm">&raquo; &nbsp; &nbsp; Поддержка</a></li> 
+  			    
+        <li><a href="vip.htm">&raquo; &nbsp; &nbsp; Платная поддержка</a></li>   
+              </ul>
+              <div id="latest">
+                  <h2><img src="images/title_latest_events.gif" width="165" height="24" alt="Новости" /></h2>
+                  
+        <div class="events"> 
+          <h3>09/12/2007</h3>
+                      
+          <p>Программа Qtaxi выложена в открытый доступ.</p>
+                  
+                     
+          <div class="events">
+                      </div>
+          <!-- end .i -->
+          <p class="readmore"><a href="news.htm">...Подробнее</a></p>
+            
+          <!-- end latest -->
+        </div>
+      </div>
+    </div>
+    <!-- end left -->
+          
+    <div id="content"> 
+      <div class="inner">
+	  
+                  <h2>Подготовка сервера <strong>PostgreSQL</strong> к работе.</h2>
+                  <p> 1. Нам нужно создать базу для работы программы. Для этого запускаете "pgAdmin III", в котором нажимаете первую иконку на тулбаре, и в открывшемся окне вводим параметры нашего сервера. Вам необходимо указать, какое-либо имя сервера, чтобы знать к какому вы подключаетесь, имя компьютера или его IP адрес, на котором запущен PostgreSQL и пароль администратора сервера базы данных. нажимаем кнопку "OK" и если всё настроено правильно вы подключитесь к серверу.</p>
+			 <img src="images/db7.JPG" alt="Подключаемся" width="334" height="471" />	
+		<p>В целях безопасности, по умолчанию PostgreSQL принимает подключения только с компьютера на котором он запущен, поэтому вам надо отредактировать файл C:\Program Files\PostgreSQL\8.1\data\pg_hba.conf добавив строку <br /><strong>host	 all	 all	 192.168.1.0/24	 md5</strong><br />192.168.1.0/24 - как пример, здесь должна быть ваша подсеть.<br />После внесения исправлений, перезапустите сервис "PostgreSQL" в остнастке "Службы" панели управления или перезапустите компьютер.</p>
+		<p>2. Далее ван необходимо развернуть дерево слева в окне. Выделить слово "Databases" и нажать правую кнопку мыши, в контекстном меню выбрать пункт "New Database". </p>				
+			<img src="images/db8.JPG" alt="создание базы" width="185" height="98" />
+		<p>3.  В окне создания введите имя новой базы, без кавычек (к примеру "taxi") и нажать кнопку "OK"</p>				
+			<img src="images/dbcreate.jpg" alt="ввод имени базы" width="389" height="556" />
+		<p>4.  Теперь необходимо создать структуру базы, для работы программы Qtaxi, для чего раскрываете узел "Databases", выделяете мышкой имя созданной вами базы (taxi), и вызываете конткстное меню, где выбираете пункт "Restore".</p>				
+			<img src="images/db9.JPG" alt="восстановление структуры" width="197" height="195" />
+		<p>5.  В новом окне нажимаете кнопку напротив строки "Filename" в виде - "..." и в открывшемся диалоге выбираете файл "taxi.backup", который находится в каталоге с программой Qtaxi.</p>
+			<img src="images/db10.JPG" alt="выбор бекап файла" width="550" height="249" />
+		<p> Нажимаете кнопку "OK", затем "Cancel". <br />В случае вывода сообщений, как на картинке ниже, не стоит беспокоится, это предупрежденеи из-за наличия установленного pgsql расширения сервера, которое не требует восстановления.</p>				
+			<img src="images/db11.JPG" alt="предупреждения pgrestore" width="347" height="291" />
+  		<p>Поздравляем, Вы только что закончили установку и настройку сервера баз данных - PostgreSQL. Теперь всё готово для работы программы "Qtaxi".</p>				
+	
+              </div><!-- end .inner -->
+              &nbsp;
+          </div><!-- end content -->
+    <div class="clear"></div>
+          <div id="footer">
+              Powered by <a href="http://kdewebdev.org">Quanta plus</a>
+          </div><!-- end footer -->
+      </div><!-- end body -->
+  </div>
+</body>
+</html>

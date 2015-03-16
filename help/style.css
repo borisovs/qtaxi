@@ -1,0 +1,163 @@
+body {
+    font-family: tahoma, helvetica, arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    background: #979dae;
+    color: #e4e7ef;
+	 background-image:url(images/bg_lines.gif);
+}
+
+img { border: 0; }
+
+#wrapper {
+    margin: auto;
+    text-align: left;
+    width: 784px;
+    position: relative;
+    background: url(images/body_bg.gif) repeat-y;
+}
+
+#body {
+    background: url(images/body_b.gif) no-repeat bottom;
+}
+
+h1, h2, div, ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1 {
+    text-align: right;
+}
+
+h2 {
+    color: white;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.readmore {
+    text-align: right;
+}
+
+.readmore a {
+    text-decoration: underline;
+}
+
+#left .readmore {
+    text-align: left;
+}
+
+#left {
+    margin: 0;
+    padding-top: 35px;
+    background: url(images/menu_t.gif) no-repeat;
+    float: left;
+    width: 165px;
+}
+
+#left h3 {
+    font-size: 10px;
+    color: white;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#left p {
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+#nav {
+    background: url(images/menu_bg.gif) repeat-y;
+}
+
+#nav li {
+    border-top: 1px solid white;
+    padding: 4px 2px 4px 36px;
+    text-indent: -28px;
+}
+
+#latest {
+    padding-top: 13px;
+    background: url(images/menu_b.gif) no-repeat;
+}
+
+#latest .events {
+    padding: 0 10px;
+}
+
+#logo {
+    position: absolute;
+    left: 165px;
+    top: 0;
+}
+
+#content .inner {
+    float: left;
+    padding-top: 48px;
+    margin: 20px 0 10px 30px;
+    width: 348px;
+}
+
+#searchbox {
+    float: right;
+    margin-top: 48px;
+    width: 222px;
+    background: url(images/search_bg.gif) repeat-y;
+}
+
+#searchbox h3 {
+    margin: 0;
+    padding: 210px 0 10px 47px;
+    background: url(images/rider.jpg) no-repeat;
+    color: white;
+}
+
+#searchbox form {
+    background: url(images/search_b.gif) no-repeat bottom;
+    padding: 1px 0 40px 47px;
+    margin: 0;
+    line-height: 2;
+}
+
+#searchbox .text {
+    width: 150px;
+}
+
+#searchbox .submit {
+    border: 1px solid #c5cee7;
+    background: #7785ad;
+    color: #fff;
+}
+
+#searchbox .softright {
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 20px;
+}
+
+#footer {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; 
+}
+
+#footer a {
+    text-decoration: underline;
+}

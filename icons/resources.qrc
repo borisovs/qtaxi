@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/16" >
+        <file>left16.png</file>
+        <file>rigth16.png</file>
+    </qresource>
+    <qresource prefix="/32" >
+        <file>apply.png</file>
+        <file>bookmark.png</file>
+        <file>clients.png</file>
+        <file>delivery.png</file>
+        <file>driversonline.png</file>
+        <file>file_del.png</file>
+        <file>flag.png</file>
+        <file>help.png</file>
+        <file>history.png</file>
+        <file>key.png</file>
+        <file>money.png</file>
+        <file>new.png</file>
+        <file>print.png</file>
+        <file>print_preview.png</file>
+        <file>undo.png</file>
+        <file>user.png</file>
+        <file>web_connect.png</file>
+        <file>zoomin.png</file>
+        <file>zoomout.png</file>
+    </qresource>
+    <qresource prefix="/splash" >
+        <file>splash.png</file>
+    </qresource>
+</RCC>
